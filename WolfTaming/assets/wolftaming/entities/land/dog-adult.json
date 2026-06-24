@@ -16,8 +16,7 @@
                 "wolf",
                 "hunting",
                 "shepherd",
-                "corgi",
-                "peach"
+                "corgi"
             ]
         },
         {
@@ -61,7 +60,7 @@
         },
         "shape": {
             "baseByType": {
-                "@(dog-peach-.*)|(dog-shepherd-.*)": "wolftaming:entity/dog-wolf",
+                "dog-shepherd-*": "wolftaming:entity/dog-wolf",
                 "*": "wolftaming:entity/dog-{type}"
             }
         },
@@ -127,10 +126,6 @@
                         "base": "game:entity/animal/mammal/wolf/eurasian-adult10"
                     }
                 ]
-            },
-            "dog-peach-*": {
-                "base": "entity/dog-peach",
-                "alternates": []
             }
         },
         "behaviors": [

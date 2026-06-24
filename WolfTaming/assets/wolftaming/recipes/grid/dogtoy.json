@@ -3,7 +3,7 @@
     "ingredients": {
         "H": {
             "type": "item",
-            "code": "game:drygrass"
+            "code": "game:redmeat-raw"
         },
         "B": {
             "type": "item",

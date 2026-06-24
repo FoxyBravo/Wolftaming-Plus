@@ -15,8 +15,7 @@
                 "wolf",
                 "hunting",
                 "shepherd",
-                "corgi",
-                "peach"
+                "corgi"
             ]
         },
         {
@@ -53,13 +52,13 @@
         },
         "shape": {
             "baseByType": {
-                "@dog-(wolf|peach)-pup": "game:entity/animal/mammal/wolf/eurasian-baby",
+                "dog-wolf-pup": "game:entity/animal/mammal/wolf/eurasian-baby",
                 "dog-corgi-pup": "entity/dog-corgi",
                 "*": "entity/dog-{type}-{age}"
             }
         },
         "textureByType": {
-            "@dog-(wolf|peach)-pup": {
+            "dog-wolf-pup": {
                 "base": "game:entity/animal/mammal/wolf/eurasian-baby1",
                 "alternates": [
                     {

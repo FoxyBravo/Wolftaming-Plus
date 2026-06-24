@@ -13,13 +13,10 @@
 				"helmet-hunting": {
 					"base": "wolftaming:armor/helmet/dog-hunting/doghelmet-{type}"
 				},
-				"helmet-shepherd": {
-					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
-				},
-				"helmet-peach": {
-					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
-				}
-			}
+                "helmet-shepherd": {
+                    "base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
+                }
+            }
 		},
 		"damageReductionByType": {
 			"*-basic": 0.3,
