@@ -1,6 +1,7 @@
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
+using Vintagestory.API.MathTools;
 
 namespace WolfTaming
 {
@@ -56,6 +57,13 @@ namespace WolfTaming
             if (DogToy == null || !DogToy.Alive || stuck)
             {
                 pathTraverser.Stop();
+
+                if (DogToy != null && !DogToy.Alive && entity.LeftHandItemSlot?.Itemstack != null)
+                {
+                    DogToy = null;
+                    return true;
+                }
+
                 return false;
             }
 
@@ -72,6 +80,12 @@ namespace WolfTaming
                 var slot = new DummySlot(DogToy.Itemstack);
                 if (slot.TryPutInto(entity.World, entity.LeftHandItemSlot) > 0)
                 {
+                    DogToy.Die(EnumDespawnReason.PickedUp);
+                }
+                else if (entity.LeftHandItemSlot?.Itemstack == null)
+                {
+                    entity.LeftHandItemSlot.Itemstack = DogToy.Itemstack;
+                    entity.LeftHandItemSlot.MarkDirty();
                     DogToy.Die(EnumDespawnReason.PickedUp);
                 }
                 DogToy = null;
@@ -100,6 +114,11 @@ namespace WolfTaming
             double x = Owner.Pos.X;
             double y = Owner.Pos.Y;
             double z = Owner.Pos.Z;
+
+            if (!pathTraverser.Active)
+            {
+                pathTraverser.WalkTowards(new Vec3d(x, y, z), moveSpeed, 0.2f, OnGoalReached, OnStuck);
+            }
 
             pathTraverser.CurrentTarget.X = x;
             pathTraverser.CurrentTarget.Y = y;
