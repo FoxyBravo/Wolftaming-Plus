@@ -84,6 +84,9 @@
                     },
                     {
                         "base": "entity/dog-shepherd-4"
+                    },
+                    {
+                        "base": "entity/dog-shepherd-5"
                     }
                 ]
             },
