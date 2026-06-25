@@ -10,6 +10,6 @@
     "version": "5.0.27",
     "dependencies": {
         "game": "1.22.0",
-        "petai": "5.0.0"
+        "tamedaiplus": "5.1.0"
     }
 }

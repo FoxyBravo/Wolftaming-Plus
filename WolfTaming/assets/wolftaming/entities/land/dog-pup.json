@@ -151,7 +151,7 @@
                     },
                     {
                         "code": "petcookie-meat-perfect",
-                        "domain": "petai",
+                        "domain": "tamedaiplus",
                         "progress": 0.8,
                         "cooldown": 3
                     }
@@ -182,7 +182,7 @@
                     },
                     {
                         "type": "item",
-                        "code": "petai:petcookie-meat-perfect"
+                        "code": "tamedaiplus:petcookie-meat-perfect"
                     }
                 ]
             },
@@ -321,7 +321,7 @@
                     },
                     {
                         "code": "petcookie-meat-perfect",
-                        "domain": "petai",
+                        "domain": "tamedaiplus",
                         "progress": 0.8,
                         "cooldown": 3
                     }
@@ -352,7 +352,7 @@
                     },
                     {
                         "type": "item",
-                        "code": "petai:petcookie-meat-perfect"
+                        "code": "tamedaiplus:petcookie-meat-perfect"
                     }
                 ]
             },
@@ -577,7 +577,7 @@
                             "bushmeat-raw",
                             "redmeat-raw",
                             "poultry-raw",
-                            "petai:petcookie-meat-perfect"
+                            "tamedaiplus:petcookie-meat-perfect"
                         ],
                         "useTime": 1.5,
                         "mincooldownHours": 0.1,
