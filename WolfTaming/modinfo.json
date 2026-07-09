@@ -7,7 +7,7 @@
         "G3rste"
     ],
     "description": "Community fork of WolfTaming — tame wolves and raise them as loyal companions with enhanced features and TamedAI Plus integration.",
-    "version": "5.1.0",
+    "version": "5.2.0",
     "dependencies": {
         "game": "1.22.0",
         "tamedaiplus": "5.1.0"
