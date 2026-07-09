@@ -1,15 +1,15 @@
 {
     "type": "code",
     "modid": "wolftaming",
-    "name": "Wolf taming",
+    "name": "WolfTaming Plus",
     "side": "universal",
     "authors": [
         "G3rste"
     ],
-    "description": "Mod that focuses on making wolves tameable and usable by the player.",
-    "version": "5.0.27",
+    "description": "Community fork of WolfTaming — tame wolves and raise them as loyal companions with enhanced features and TamedAI Plus integration.",
+    "version": "5.2.0",
     "dependencies": {
         "game": "1.22.0",
-        "petai": "5.0.0"
+        "tamedaiplus": "5.1.0"
     }
 }
